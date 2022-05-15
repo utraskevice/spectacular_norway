@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="app/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <title>spectacular_norway</title>
+</head>
+
+<body>
+  <main>
+    <h1 class="question">What makes Norway so spectacular?</h1>
+    <div>
+      <audio id="audio" onclick="playPause(this)" src="../app/images/sound.mp3"></audio>
+      <button id="play" onclick="playPause(this)">♬</button>
+    </div>
+
+    <div>
+      <button onclick="changeHeader(event, 'pirmas')"><i class="fa-solid fa-water"></i></button>
+      <button onclick="changeHeader(event, 'antras')"><i class="fa-solid fa-mountain"></i></button>
+      <button onclick="changeHeader(event, 'trecias')"><i class="fa-solid fa-icicles"></i></button>
+      <button onclick="changeHeader(event, 'ketvirtas')"><i class="fa-solid fa-mountain-sun"></i></button>
+      <button onclick="changeHeader(event, 'penktas')"><i class="fa-solid fa-bolt"></i></button>
+      <button onclick="changeHeader(event, 'sestas')"><i class="fa-solid fa-city"></i></button>
+    </div>
+    <div class="box">
+      <div id="pirmas" class="tab">
+        <img src="https://images.unsplash.com/photo-1505312917212-9db5bde78aff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1752&q=80" alt="fjord">
+        <h1 id="title">Fjords</h1>
+      </div>
+      <div id="antras" class="tab">
+        <img src="https://images.unsplash.com/photo-1523480790568-0cc8ff425633?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2233&q=80" alt="mountain">
+        <h1 id="title">Mountains</h1>
+      </div>
+      <div id="trecias" class="tab">
+        <img src="https://images.unsplash.com/photo-1522340935222-e730f91df29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="glacier">
+        <h1 id="title">Glaciers</h1>
+      </div>
+      <div id="ketvirtas" class="tab">
+        <img src="https://images.unsplash.com/photo-1522340935222-e730f91df29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="polar_day">
+        <h1 id="title">Polar days</h1>
+      </div>
+      <div id="penktas" class="tab">
+        <img src="https://images.unsplash.com/photo-1494243762909-b498c7e440a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="aurora">
+        <h1 id="title">Northen lights</h1>
+      </div>
+      <div id="sestas" class="tab">
+        <img src="https://images.unsplash.com/photo-1566894069047-9bd6042f1398?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="oslo">
+        <h1 id="title">Urbanicity</h1>
+      </div>
+    </div>
+  </main>
+  <script src="../gulpfile.js"></script>
+</body>
+
+</html>

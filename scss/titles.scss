@@ -1,0 +1,26 @@
+h1 {
+    font-size: 3em;
+    margin: 30px;
+    position: relative;
+    content: "";
+    text-shadow: 2px 2px $blue;
+    opacity: 1;
+    transition: transform 0.5s;
+}
+
+h1:after {
+    position: absolute;
+    content: "";
+    top: 90%;
+    bottom: 50%;
+    height: 5%;
+    width: 90%;
+    background: $blue;
+    transition: transform 0.3s;
+    opacity: 0;
+}
+
+h1:hover:after {
+    transform: translateX(-100%);
+    opacity: 1;
+}

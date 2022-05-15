@@ -1,0 +1,12 @@
+#play {
+    font-size: 4em;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px $blue;
+}
+
+#play:hover {
+    color: $blue;
+    background: none;
+}
